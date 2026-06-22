@@ -3,17 +3,74 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-
-    <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
         <title>Cloudy Engine</title>
-        <p>
-            A simple website for my game engine Cloudy. A small ECS engine with
-            a future focus on easy implementation of RL algorithms to games!
-        </p>
-        <ol>
-            <li>Game Engine Here</li>
-            <li>Future projects</li>
-        </ol>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <span class="logo">cloudyengine</span>
+            <nav>
+                <a href="#projects">projects</a>
+                <a href="#blog">blog</a>
+                <a href="#about">about</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Cloudy Engine</h1>
+                <p>
+                    A small ECS game engine in C, built from scratch, with an
+                    eye toward reinforcement learning.
+                </p>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="card">
+                    <h3>Cloudy Engine</h3>
+                    <p>
+                        A flat-array ECS engine written in C with SDL2.
+                        Currently rebuilding the architecture from the ground up
+                        for V2.
+                    </p>
+                    <div class="tags">
+                        <span>C</span>
+                        <span>SDL2</span>
+                        <span>ECS</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="section">
+                <h2>Blog</h2>
+                <p class="empty-note">
+                    Nothing here yet. Writing starts once the engine work picks
+                    back up.
+                </p>
+            </section>
+
+            <section id="about" class="section">
+                <h2>About</h2>
+                <p>
+                    I'm a student studying cybersecurity, building Cloudy Engine
+                    on the side and learning Linux systems and self-hosting
+                    along the way.
+                </p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <a href="https://github.com/Eggexe" target="_blank" rel="noopener"
+                >GitHub</a
+            >
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
