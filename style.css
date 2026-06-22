@@ -120,6 +120,16 @@ main {
     font-size: 0.95rem;
 }
 
+.card h3 a {
+    color: #e8e8f0;
+    text-decoration: none;
+}
+
+.card h3 a:hover,
+.card h3 a:focus-visible {
+    color: #7aa2f7;
+}
+
 /* Footer */
 .site-footer {
     text-align: center;
